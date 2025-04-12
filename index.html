@@ -15,6 +15,7 @@
         body {
             background-color: #f5f7fa;
             color: #333;
+            position: relative;
         }
 
         .container {
@@ -23,6 +24,32 @@
             padding: 30px;
             background-color: white;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        /* Download CTA Button */
+        .download-cta {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #3498db;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .download-cta:hover {
+            background-color: #2980b9;
+            transform: translateY(-50%) scale(1.05);
         }
 
         /* SINGLE LINE HEADER STYLES */
@@ -162,6 +189,12 @@
                 padding: 20px;
             }
             
+            .download-cta {
+                right: 10px;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            
             header {
                 flex-direction: column;
                 align-items: flex-start;
@@ -192,6 +225,15 @@
     </style>
 </head>
 <body>
+    <!-- Download CTA Button -->
+    <a href="Brihaspati_Pandey___Manager_Technology.pdf" download class="download-cta">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+        </svg>
+        Download PDF
+    </a>
+
     <div class="container">
         <header>
             <h1>Brihaspati Pandey</h1>
